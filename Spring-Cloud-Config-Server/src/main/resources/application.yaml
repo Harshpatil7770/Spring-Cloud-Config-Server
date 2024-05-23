@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active:
+    - dev01
+
+  application:
+    name: Spring-Cloud-Config-Server
+    
+  cloud:
+    config:
+      server:
+        git:
+          default-label: master
+          
+          uri: https://github.com/Harshpatil7770/centra_cluod.git
+
+logging:
+  file:
+    path: C:/App/CBNK/logs/spring_cloud_config_server/
+    
+    name: C:/App/CBNK/logs/spring_cloud_config_server/config.logs
+    
+server:
+  port: 8888
